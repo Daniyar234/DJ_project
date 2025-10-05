@@ -1,0 +1,7 @@
+{% autoescape off %}
+
+<p>Click the link: </p>
+{{ protocol }}://{{ domain }}{% url 'verify_email' uidb64=uid token=token %}
+
+
+{% endautoescape %}
